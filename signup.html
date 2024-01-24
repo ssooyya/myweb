@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./travel.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/821e8d3801.js" crossorigin="anonymous"></script>
+    <title>회원가입</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar_logo">
+            <a href="./index.html"><i class="fa-solid fa-plane-up fa-2x" style="color: #03580e;">travel<br>tourism</i></a>
+        </div>
+        <ul class="navbar_menu">
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./info.html">여행정보</a></li>
+            <!-- <li><a href="./map.html">여행지도</a></li> -->
+            <li><a href="./accom.html">숙박정보</a></li>
+        </ul>
+        <ul class="navbar_icon">
+            <li><a href="./login.html"><i class="fa-solid fa-right-to-bracket fa-2x" style="color: #03580e;"></i></a></li>
+        </ul>
+        <a href="#" class="navbar_toggleBtn" onclick="toggle()">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+    </nav>
+</div>
+    <div class="signup-wrapper">
+        <h2>회원가입</h2>
+        <form action="./login.html" class="signup-form" onsubmit="return signup()">
+            <input type="text" name="email" placeholder="aaa@aaa.aaa"><br>
+            <input type="password" name="pw" size="40" placeholder="Password"><br>
+            <input type="password" name="pwck" size="40" placeholder="Repeat Password"><br>
+            <input type="text" name="username" size="40" placeholder="Name"><br>
+            <input type="tel" name="mobile" size="40" placeholder="01000000000"><br>
+            <input type="submit" value="회원가입"><br>
+            <a href="./login.html"><h4>회원이면 로그인해주세요</h4></a>
+        </form>
+    </div>
+</body>
+</html>

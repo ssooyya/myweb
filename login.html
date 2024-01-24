@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./travel.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/821e8d3801.js" crossorigin="anonymous"></script>
+    <title>로그인</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar_logo">
+            <!-- <img src="img/tourismlogo.png" alt="로고" width="190px"> -->
+            <a href="./index.html"><i class="fa-solid fa-plane-up fa-2x" style="color: #03580e;">travel<br>tourism</i></a>
+        </div>
+        <ul class="navbar_menu">
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./info.html">여행정보</a></li>
+            <!-- <li><a href="./map.html">여행지도</a></li> -->
+            <li><a href="./accom.html">숙박정보</a></li>
+        </ul>
+        <ul class="navbar_icon">
+            <li><a href="./login.html"><i class="fa-solid fa-right-to-bracket fa-2x" style="color: #03580e;"></i></a></li>
+        </ul>
+        <a href="#" class="navbar_toggleBtn" onclick="toggle()">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+    </nav>
+</div>
+
+<div class="login-wrapper">
+    <h2>로그인</h2>
+    <form action="./index.html" class="signin-form" onsubmit="return signin()">
+        <input type="text" name="userEmail" placeholder="aaa@aaa.aaa" size="40">
+        <input type="password" name="userPw" placeholder="Password" size="40">
+        <input type="submit" value="Login">
+        <p class="msg">회원이 아니신가요? <a href="./signup.html">회원가입 하러가기</a></p>
+    </form>
+</div>
+
+</body>
+</html>l

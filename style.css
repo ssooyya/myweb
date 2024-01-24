@@ -1,0 +1,345 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+.wrap{
+    width: 100%;
+    height: 100%;
+}
+li {
+    list-style-type: none;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #a0d4a3;
+    padding: 8px 12px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.navbar_logo i{
+    padding-left: 0;
+}
+.navbar_logo a{
+    color: black;
+}
+.navbar_icon{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding-left: 0;
+}
+.navbar_icon li{
+    padding: 8px 12px;
+}
+.navbar_menu{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding-left: 0;
+}
+.navbar_menu li{
+    padding: 8px 30px;
+}
+.navbar_menu li:hover{
+    background-color: #507755;
+    border-radius: 3px;
+}
+.navbar_menu li a:hover{
+    color: white;
+}
+.navbar_menu a{
+    color: black;
+    text-decoration: none;
+}
+.navbar_toggleBtn{
+    color: #03580e;
+    position: absolute;
+    right: 15px;
+    font-size: 20px;
+}
+.clear{
+    clear:both;
+}
+/* 슬라이드 */
+.carousel-inner{
+    margin: 50px 0 25px 0;
+    display: flex;
+    height: 750px;
+    padding: 40px 30px;
+    border-radius: 5px;
+    background-color: #ccdbcd;
+}
+.carousel-inner img{
+    width: 100%;
+    height: 700px;
+    margin-bottom: 50px;
+}
+.slider{
+    padding-bottom: 50px;
+}
+/* 푸터 */
+.footer {
+    /* margin: 30px 0 0 0; */
+    margin-top: 1500px;
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    font-weight: 600;
+    margin-left: 15px;
+    padding-top: 20px;
+}
+.footer hr{
+    width: 100%;
+}
+.footer .copyright{
+    float: left;
+}
+.footer .address{
+    float: left;
+}
+.footer p span{
+    float: left;
+    margin-left: 10px;
+}
+.footer .sns a{
+    float: right;
+    margin-left: 15px;
+}
+
+/* 로그인 회원가입 */
+.login-wrapper{
+    width: 360px;
+    padding: 8% 0 0;
+    margin: auto;
+}
+.login-wrapper h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.signup-wrapper{
+    width: 360px;
+    padding: 8% 0 0;
+    margin: auto;
+}
+.signup-wrapper h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+form{
+    position: relative;
+    background-color: #a0d4a3;
+    z-index: 1;
+    margin: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+form input{
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+form .button{
+    text-transform: uppercase;
+    outline: 0;
+    background: #4CAF50;
+    width: 100%;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transform: all 0.3 ease;
+    transition: all 0.3 ease;
+}
+form .button:hover, form .button:active, form .button:focus{
+    background: #43A047;
+}
+form .msg{
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 12px;
+}
+form .msg a{
+    color: #4CAF50;
+    text-decoration: none;
+}
+form .sign-form{
+    display: none;
+}
+/* 여행정보 조회 */
+.info-wrapper{
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    margin-top: 100px;    
+}
+/* 숙박 */
+.accom-wrapper{
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+    padding: 40px;
+}
+#frm{
+    background-color: #d0dfd1;
+}
+#frm h1{
+    font-weight: 600;
+    color: #03580e;
+    margin-bottom: 20px;
+}
+#frm label{
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 10px;
+}
+#frm input{
+    width: 300px;
+    height: 30px;
+    padding: 0 10px;
+    margin-bottom: 16px;
+    border-radius: 6px;
+    background-color: #f8f8f8;
+}
+#frm select{
+    margin-bottom: 16px;
+    width: 300px;
+    height: 30px;
+    border-radius: 6px;
+}
+#frm button{
+    background-color:#03580e;
+    border-radius: 6px;
+    height: 40px;
+    /* width: 15%; */
+    width: 27%;
+    color: white;
+    margin-right: 20px;
+    text-align: center;
+}
+/* 조회결과 테이블 */
+.contain{
+    margin-top: 10px;
+}
+hr{
+    margin: 0 15px 50px 15px;
+}
+.contain h2{
+    font-weight: 600;
+}
+.contain table,th,td {
+    border-collapse: collapse;
+    margin-right: auto;
+    margin-left: auto;
+}
+.contain table th{
+    font-weight: 900;
+}
+th{
+    background-color: #a0d4a3;
+}
+th,td {
+    padding: 10px;
+    font-weight: 500;
+    font-size: 17px;
+}
+tr{
+    border : 1px solid black;
+}
+tr:nth-child(even){ /* 짝수번째 */
+    background-color: #ebf5ec;
+}
+tr:hover{
+    background-color: #d0dfd1;
+    opacity: 0.9;
+    cursor: pointer;
+}
+/*PC*/
+@media screen and (min-width: 768px) {
+    .navbar_toggleBtn{
+        position: absolute;
+        right: 15px;
+        display: none;
+    }
+}
+/*Tablet*/
+@media screen and (max-width: 768px) {
+    .navbar{
+        flex-direction: column; /*열 형태로 정렬*/
+        align-items: flex-start; /*왼쪽에서 시작*/
+        margin: 0;
+    }
+    .navbar_menu{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        /* display: none; */
+    }
+    .navbar_menu li{
+        width: 100%;
+        text-align: center;
+    }
+    .navbar_icon{
+        /* display: none; */
+        justify-content: center;
+        width: 100%;
+    }
+    .navbar_toggleBtn{
+        position: absolute;
+        right: 15px;
+        display: none;
+    }
+    .carousel-inner{
+        height: 600px;
+    }
+    .footer{
+        margin-top: 1000px;
+    }
+}
+/*Mobile*/
+@media screen and (max-width: 600px) {
+    .navbar_menu{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        display: none;
+    }
+    .navbar_menu li{
+        text-align: center;
+        width: 100%;
+    }
+    .navbar_toggleBtn{
+        position: absolute;
+        display: block;
+        right: 15px;
+    }
+    .navbar_menu.active,
+    .navbar_icon.active{
+        display: flex;
+    }
+    .navbar_icon{
+        display: none;
+        justify-content: center;
+        width: 100%;
+    }
+    .carousel-inner{
+        height: 650px;
+    }
+    .footer{
+        margin-top: 1000px;
+        bottom: 0;
+    }
+}
