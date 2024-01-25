@@ -88,8 +88,6 @@ function signup(){
     return true;
 }
 
-
-
 //map 위치
 // var map_key='43b3cc3fc3a95a32e488271fc4445410';
 // function showPosition(){
